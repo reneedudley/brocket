@@ -16,7 +16,7 @@ class CreateBookmarkTagTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->integer('user_id')->unsigned();
-            $table->integer('subbreddit_id')->unsigned();
+            $table->integer('bookmark_tag')->unsigned();
         });
     }
 
