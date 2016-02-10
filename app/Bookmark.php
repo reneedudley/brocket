@@ -15,10 +15,18 @@ class Bookmarks extends Model
     }
 
     /**
-     * Get the tags for the bookmarks.
+     * Get the tags for a bookmark.
      */
     public function tags()
     {
-        return $this->hasMany('App\Tags');
+        return $this->hasMany('App\Tag');
     }
+     /**
+     * Get tags for the bookmarks
+     */
+    public function bookmarkTag()
+    {
+        return $this->blongsToMany('App\Tag');
+    }
+
 }
