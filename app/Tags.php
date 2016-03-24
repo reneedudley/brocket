@@ -11,7 +11,7 @@ class Tags extends Model
      */
     public function bookmark()
     {
-        return $this->belongsTo('App\Bookmark');
+        return $this->belongsTo('App\Bookmarks');
     }
     /**
      * Get bookmarks for the tags
